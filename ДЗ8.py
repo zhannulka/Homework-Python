@@ -6,7 +6,7 @@ def printinfo():
 def searchinfo():
     with open('phonebook.txt', 'r', encoding='utf-8') as file:
         book = file.read().split('\n')
-        temp = input('ведите ФИО или номер для поиска: ')
+        temp = input('Введите ФИО или номер для поиска: ')
         for i in book:
             if temp in i:
                 print(i)
